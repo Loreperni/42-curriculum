@@ -37,7 +37,7 @@ char	*ft_strrchr(const char *string, int target_char);
 char	*ft_strdup(const char *source_string);
 size_t	ft_strlcat(char *dest, char *src, size_t size);
 size_t	ft_strlcpy(char *dest, char *src, size_t size);
-int		ft_strlen(char *str);
+int		ft_strlen(const char *str);
 int		ft_strncmp(char *s1, char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t max_len);
 

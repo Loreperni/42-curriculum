@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_memset(void *memory_block, int value, size_t size)
+#include <stdlib.h>
+
+void	*ft_memset(void *memory_block, int value, size_t size)
 {
 	unsigned char	*ptr;
 	unsigned int	i;

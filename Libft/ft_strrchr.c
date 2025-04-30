@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
 char	*ft_strrchr(const char *string, int target_char)
 {
 	const char	*last_occurrance = NULL;

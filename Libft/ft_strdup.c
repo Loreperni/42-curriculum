@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 char	*ft_strdup(const char *source_string)
 {
 	size_t	length;
@@ -25,9 +27,9 @@ char	*ft_strdup(const char *source_string)
 	i = 0;
 	while (i < length)
 	{
-		copy[i] == source_string[i];
+		copy[i] = source_string[i];
 		i++;
 	}
-	copy[i] == '\0';
+	copy[i] = '\0';
 	return (copy);
 }

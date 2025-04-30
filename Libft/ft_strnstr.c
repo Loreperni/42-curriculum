@@ -10,10 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 char	*ft_strnstr(const char *haystack, const char *needle, size_t max_len)
 {
-	unsigned int	i;
-	unsigned int	j;
+	size_t	i;
+	size_t	j;
 
 	if (*needle == '\0')
 		return ((char *)haystack);

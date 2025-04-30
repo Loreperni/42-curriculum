@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 size_t	ft_strlcat(char *dest, char *src, size_t size)
 {
 	size_t	dest_len;
@@ -19,11 +21,11 @@ size_t	ft_strlcat(char *dest, char *src, size_t size)
 	dest_len = 0;
 	src_len = 0;
 	i = 0;
-	while (dest[dest_len] != 0 && dest_len < size - 1)
+	while (dest[dest_len] != 0 && dest_len < size)
 		dest_len++;
 	while (src[src_len] != 0)
 		src_len++;
-	if (dest_len >= size)
+	if (dest_len == size)
 		return (size + src_len);
 	while (src[i] != '\0' && dest_len + i < size - 1)
 	{

@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
 char	*ft_strchr(const char *string, int target_char)
 {
 	while (*string)

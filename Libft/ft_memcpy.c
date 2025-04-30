@@ -10,15 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 void	*ft_memcpy(void *destination, const void *source, size_t size)
 {
-	unsigned char	*dest_ptr;
-	unsigned char	*src_ptr;
-	unsigned int	i;
+	unsigned char		*dest_ptr;
+	const unsigned char	*src_ptr;
+	unsigned int		i;
 
 	dest_ptr = (unsigned char *)destination;
-	src_ptr = (unsigned char *)source;
+	src_ptr = (const unsigned char *)source;
 	i = 0;
+	if (!destination && !source)
+		return (0);
 	while (i < size)
 	{
 		dest_ptr[i] = src_ptr[i];

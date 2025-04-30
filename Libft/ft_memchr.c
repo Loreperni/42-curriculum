@@ -10,10 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 void	*ft_memchr(const void *memory_block, int target_byte, size_t size)
 {
-	unsigned char	*ptr;
-	unsigned int	i;
+	const unsigned char	*ptr;
+	size_t				i;
 
 	ptr = (const unsigned char *)memory_block;
 	i = 0;
