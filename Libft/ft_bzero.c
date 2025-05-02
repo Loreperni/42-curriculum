@@ -14,14 +14,5 @@
 
 void	ft_bzero(void *memory_block, size_t size)
 {
-	unsigned char	*ptr;
-	unsigned int	i;
-
-	ptr = (unsigned char *)memory_block;
-	i = 0;
-	while (i < size)
-	{
-		ptr[i] = 0;
-		i++;
-	}
+	ft_memset(memory_block, 0, size);
 }

@@ -31,7 +31,7 @@ void	*ft_memchr(const void *memory_block, int target_byte, size_t size);
 int		ft_memcmp(const	void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *destination, const void *source, size_t size);
 void	*ft_memmove(void *destination, const void *source, size_t size);
-void	ft_memset(void *memory_block, int value, size_t size);
+void	*ft_memset(void *memory_block, int value, size_t size);
 char	*ft_strchr(const char *string, int target_char);
 char	*ft_strrchr(const char *string, int target_char);
 char	*ft_strdup(const char *source_string);
