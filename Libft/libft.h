@@ -6,7 +6,7 @@
 /*   By:  lpernici <lpernici@42.fr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:29:59 by  lpernici         #+#    #+#             */
-/*   Updated: 2025/04/29 19:30:03 by  lpernici        ###   ########.fr       */
+/*   Updated: 2025/05/03 21:01:13 by  lpernici        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t max_len);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *str, int fd);
+void	ft_putendl_fd(char *str, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
