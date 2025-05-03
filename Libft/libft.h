@@ -35,10 +35,13 @@ void	*ft_memset(void *memory_block, int value, size_t size);
 char	*ft_strchr(const char *string, int target_char);
 char	*ft_strrchr(const char *string, int target_char);
 char	*ft_strdup(const char *source_string);
-size_t	ft_strlcat(char *dest, char *src, size_t size);
-size_t	ft_strlcpy(char *dest, char *src, size_t size);
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 int		ft_strlen(const char *str);
 int		ft_strncmp(char *s1, char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t max_len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 
 #endif
