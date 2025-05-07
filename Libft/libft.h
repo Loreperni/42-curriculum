@@ -6,14 +6,13 @@
 /*   By:  lpernici <lpernici@42.fr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 19:29:59 by  lpernici         #+#    #+#             */
-/*   Updated: 2025/05/03 21:01:13 by  lpernici        ###   ########.fr       */
+/*   Updated: 2025/05/07 14:11:57 by  lpernici        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
 
@@ -47,5 +46,9 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *str, int fd);
 void	ft_putendl_fd(char *str, int fd);
 void	ft_putnbr_fd(int n, int fd);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 
 #endif
